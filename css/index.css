@@ -173,6 +173,7 @@ sup {
 	border-radius:20px;
 	vertical-align:middle;
 	box-shadow: 0 6px #565656;
+	cursor:pointer;
 }
 
 .startButton div:active, .strictButton div:active {

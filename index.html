@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<title>Simon Game</title>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Quantico|Montserrat" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="mainBoard">
+				<div class="quarter green"></div>
+				<div class="quarter red"></div>
+				<div class="quarter yellow"></div>
+				<div class="quarter blue"></div>
+			</div>
+			<div class="options">
+				<div class="title">
+					<span class="titleText">Simon<sup>&reg;</sup></span>
+				</div>
+				<div class="buttons">
+					<div class="light">
+						<div class="strictLight"></div>
+					</div>
+					<div class="display">
+						<div class="screen">
+							<span class="screenText"></span>
+						</div>
+						<div class="startButton">
+							<div></div>
+						</div>
+						<div class="strictButton">
+							<div></div>
+						</div>
+					</div>
+					<div class="text">
+						<div>Count</div>
+						<div>Start</div>
+						<div>Strict</div>
+					</div>
+				</div>
+				<div class="switch">
+					<input id="onOff" name="onOff" type="checkbox" data-toggle="toggle" data-size="large" data-onstyle="success" data-offstyle="danger">
+				</div>
+			</div>
+		</div>
+		<audio id="sound"></audio>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</html>

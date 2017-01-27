@@ -1,0 +1,201 @@
+body {
+	background-image:url("../assets/images/darkwood.png");
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+
+.container {
+	position:relative;
+	margin:100px auto;
+	border-radius:50%;
+	width:715px;
+	height:715px;
+	background-color:black;
+	-webkit-box-shadow: 0px 0px 17px 5px rgba(255,233,107,0.9);
+    -moz-box-shadow: 0px 0px 17px 5px rgba(255,233,107,0.9);
+	box-shadow: 0px 0px 17px 5px rgba(255,233,107,0.9);
+}
+
+.options {
+	position:absolute;
+	margin:-175px 0px 0px -175px;
+	top: 50%;
+	left: 50%;
+	width:350px;
+	height:350px;
+	border:20px black solid;
+	border-radius:50%;
+	background-color:#7c7c7c;
+	text-align:center;
+	padding:5px;
+	z-index:2;
+}
+
+.mainBoard {
+	position:absolute;
+	margin:-335px 0px 0px -350px;
+	top:50%;
+	left:50%;
+	width:700px;
+	text-align:center;
+	font-size:0px;
+}
+
+.title {
+	margin:0 auto;
+	width:200px;
+	padding:20px 0;
+	font-size:60px;
+	font-family:'Montserrat';
+	font-weight:bolder;
+	color:white;
+	text-align:center;
+}
+
+sup {
+	font-size:15px;
+}
+
+.quarter {
+	display:inline-block;
+	width:335px;
+	height:335px;
+	opacity:0.7;
+	cursor:pointer;
+	z-index:1;
+}
+
+.yellow {
+	background-color:#f2c301;
+	border-radius: 0 0 0 350px;
+	-moz-border-radius:0 0 0 350px;
+	-webkit-border-radius:0 0 0 350px;
+}
+
+.blue {
+	background-color:#0164cc;
+	border-radius: 0 0 350px 0;
+	-moz-border-radius:0 0 350px 0;
+	-webkit-border-radius:0 0 350px 0;
+}
+
+.green {
+	background-color:#00cb56;
+	border-radius: 350px 0 0 0;
+	-moz-border-radius:350px 0 0 0;
+	-webkit-border-radius:350px 0 0 0;
+}
+
+.red {
+	background-color:#ff0010;
+	border-radius: 0 350px 0 0;
+	-moz-border-radius:0 350px 0 0;
+	-webkit-border-radius:0 350px 0 0;
+}
+
+.green, .yellow {
+	border-right:15px black solid;
+}
+
+.red, .blue {
+	border-left:15px black solid;
+}
+
+.green, .red {
+	border-bottom:15px black solid;
+}
+
+.yellow, .blue {
+	border-top:15px black solid;
+}
+
+.buttons {
+	padding-bottom:30px;
+}
+.display div {
+	display:inline-block;
+	width:30%;
+}
+
+.text div {
+	display:inline-block;
+	width:30%;
+	font-size:20px;
+	font-family:'Montserrat';
+	font-weight:bolder;
+}
+
+.screen {
+	padding-top:2px;
+	height:50px;
+	background-color:#32050c;
+	border:4px black solid;
+	border-radius:10px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.screenText {
+	color:#dc0d29;
+	font-family:'Quantico';
+	font-size:30px;
+}
+
+.light {
+	position:absolute;
+	left:215px;
+}
+.strictLight {
+	background-color: black;
+	width:15px;
+	height:15px;
+	border:2px black solid;
+	border-radius:50%;
+}
+
+.switch {
+	margin:0 auto;
+	width:200px;
+}
+
+.startButton div {
+	background-color:#df4242;
+}
+
+.strictButton div {
+	background-color:yellow;
+}
+
+.startButton div, .strictButton div {
+	width:40px;
+	height:40px;
+	border:4px black solid;
+	border-radius:20px;
+	vertical-align:middle;
+	box-shadow: 0 6px #565656;
+}
+
+.startButton div:active, .strictButton div:active {
+	box-shadow: 0 3px #333333;
+  	transform: translateY(3px);
+}
+
+.on {
+	background-color:#ff0010;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+}
+
+.blink {
+  animation: blink-animation 0.6s steps(5, start) infinite;
+  -webkit-animation: blink-animation 0.6s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
